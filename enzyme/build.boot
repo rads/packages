@@ -43,7 +43,7 @@
         (io/file tmp +lib-folder+ "helper.js"))
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
         ((sh (cmd "npm") "install" "--production"))
-        ((sh (cmd "npm") "install" "react@15" "react-dom@15" "react-test-renderer@15" "enzyme" "webpack" "enzyme-adapter-react-15"))
+        ((sh (cmd "npm") "install" "react@15" "react-dom@15" "react-test-renderer@15" "enzyme" "webpack" "enzyme-adapter-react-15.4"))
         ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack"))) "--config" "webpack-cljsjs.config.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
