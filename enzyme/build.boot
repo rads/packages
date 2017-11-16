@@ -9,10 +9,11 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "3.0.0")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/enzyme
-       :version     "3.0.0-1"
+       :version     +version+
        :description "A JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output."
        :url         "http://airbnb.io/enzyme/"
        :scm         {:url "https://github.com/airbnb/enzyme"}
