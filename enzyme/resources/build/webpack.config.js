@@ -11,6 +11,7 @@ module.exports = {
     "react/lib/React": "React",
     "react-dom": "ReactDOM",
     "react-dom/server": "{}",
-    "react-dom/test-utils": "React.addons.TestUtils"
+    "react-dom/test-utils": "React.addons.TestUtils",
+    "react-addons-test-utils": "React.addons.TestUtils"
   }
 };
