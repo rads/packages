@@ -12,7 +12,7 @@
 
 (task-options!
  pom  {:project     'cljsjs/enzyme
-       :version     +lib-version+
+       :version     "3.0.0-1"
        :description "A JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output."
        :url         "http://airbnb.io/enzyme/"
        :scm         {:url "https://github.com/airbnb/enzyme"}
